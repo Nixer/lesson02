@@ -3,7 +3,7 @@ def strings_compare(str1, str2):
         if str1 == str2:
             return 1
         elif str1 != str2:
-            if len(str1) > len(str2):
+            if len(str1) > len(str2) and str2 != "learn":
                 return 2
             elif str2 == "learn":
                 return 3
@@ -18,4 +18,5 @@ print(strings_compare('abc', 'abc'))
 print(strings_compare('abcd', 'abc'))
 print(strings_compare('abcd', 'learn'))
 print(strings_compare('abcd', 'learnad'))
+print(strings_compare('abcadasdsd', 'learn'))
 
